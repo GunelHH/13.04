@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  height: 800px;
+  background-color: black;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.container .image img {
+  width: 300px;
+  animation: MyAnime 5s forwards infinite alternate-reverse linear;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@keyframes MyAnime {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 50%;
+    left: 90%;
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(55, 226, 21));
+  }
+  50% {
+    top: 90%;
+    left: 50%;
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(9, 20, 119));
+  }
+  75% {
+    top: 50%;
+    left: 0%;
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(83, 18, 107));
+  }
+  100% {
+    top: 0%;
+    left: 50%;
+  }
+}
